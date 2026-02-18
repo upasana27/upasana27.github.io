@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Training for Mutual Adaptation in Human–AI Teaming - Upasana Biswas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-brand">Upasana Biswas</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#research">Research</a></li>
+            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="index.html#talks">Talks</a></li>
+            <li><a href="index.html#teaching">Teaching</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+
+<section class="section">
+    <div class="container">
+        <h1>Nested Training for Mutual Adaptation in Human–AI Teaming</h1>
+        
+        <p><em>October 2025 – Present</em></p>
+        
+        <div class="project-details">
+
+            <h2>Overview</h2>
+            <p>
+            This project develops a principled framework for enabling <strong>mutual adaptation</strong> 
+            in human–AI collaboration. Unlike traditional approaches that train agents against 
+            static partners, we explicitly model interactive adaptation and design a hierarchical 
+            training regime that approximates multi-level reasoning about partner behavior.
+            </p>
+
+            <h2>Motivation</h2>
+            <p>
+            In real-world teamwork, humans continuously adapt in response to an AI system’s actions. 
+            However, most reinforcement learning approaches either train against fixed partner models 
+            or rely on simultaneous co-training, which often leads to brittle coordination conventions 
+            that fail to generalize beyond the training population. Our goal is to develop agents 
+            that reason about and respond to adaptive teammates, rather than merely perform well 
+            with the specific partners seen during training.
+            </p>
+
+            <h2>Approach</h2>
+            <p>
+            We model human–AI collaboration using a finitely nested 
+            <strong>Interactive Partially Observable Markov Decision Process (I-POMDP)</strong>. 
+            To approximate this formulation in practice, we introduce a <strong>nested training regime</strong>: 
+            Level-1 agents learn to adapt to fixed strategy types (L0), and Level-2 agents 
+            subsequently learn to adapt to Level-1 adaptive behaviors. 
+            A learned latent belief embedding summarizes interaction history, enabling scalable 
+            approximation of nested reasoning within a reinforcement learning framework.
+            </p>
+
+            <h2>Key Contributions</h2>
+            <ul>
+                <li>Introduced a nested reinforcement learning framework grounded in finitely nested I-POMDPs.</li>
+                <li>Provided theoretical guarantees preventing convergence to arbitrary coordination conventions.</li>
+                <li>Demonstrated robust generalization to unseen adaptive partners in cooperative multi-episode settings.</li>
+            </ul>
+
+            <h2>Results</h2>
+            <p>
+            Evaluated in a multi-recipe Overcooked domain, our method significantly outperforms 
+            state-of-the-art baselines when paired with previously unseen adaptive partners. 
+            The learned agents exhibit structured and interpretable mutual adaptation, 
+            establishing stable coordination conventions where baseline methods fail.
+            </p>
+
+            <h2>Publications</h2>
+            <p>
+                <strong>Extended Abstract accepted at the 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)</strong>, 
+                Paphos, Cyprus, May 25–29, 2026.
+            </p>
+            <p>
+                Authors: Upasana Biswas, Durgesh Kalwar, Subbarao Kambhampati, and Sarath Sreedharan.
+            </p>
+            <p>
+                <a href="https://openreview.net/" target="_blank">Paper Link (AAMAS 2026 Extended Abstract)</a>
+            </p>
+
+            <h2>Resources</h2>
+            <p>
+            Code and experimental details will be released upon publication. 
+            Please reach out for collaboration inquiries or early access.
+            </p>
+
+        </div>
+
+        <div style="margin-top: 2rem;">
+            <a href="index.html#research" class="back-link">← Back to Research</a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Upasana Biswas</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

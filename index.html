@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Upasana Biswas | PhD Student</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upasana Biswas - PhD Student</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -17,6 +17,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#research">Research</a></li>
             <li><a href="#publications">Publications</a></li>
+            <li><a href="#talks">Talks</a></li>
             <li><a href="#teaching">Teaching</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -26,7 +27,7 @@
 <header class="hero">
     <div class="container">
         <div class="hero-content">
-            <img src="profile-photo.jpg" alt="Upasana Biswas" class="profile-photo">
+            <img src="dp(2).png" alt="Upasana Biswas" class="profile-photo">
             <div class="hero-text">
                 <h1>Upasana Biswas</h1>
                 <p class="subtitle">
@@ -60,43 +61,41 @@
         <h2>About</h2>
 
         <p>
-        I am a third-year PhD student in Computer Science at Arizona State University,
-        advised by Prof. Subbarao Kambhampati. My research lies at the intersection of
-        human–AI collaboration, multi-agent systems, and large language model (LLM)-based agents.
+        I am a PhD student in Computer Science at Arizona State University, 
+        advised by Prof. Subbarao Kambhampati. My work sits at the intersection 
+        of human–AI collaboration, multi-agent systems, and large language model (LLM)-based agents.
         </p>
 
         <p>
-        I develop principled computational frameworks to understand cooperation
-        between heterogeneous agents — including humans, reinforcement learning agents,
-        and LLM-based systems. My work combines decision-theoretic modeling,
-        hierarchical task representations, and empirical evaluation to study
-        adaptation, coordination, and interdependence in collaborative environments.
+        My research focuses on three main directions:
+        </p>
+
+        <ul>
+            <li>
+            <strong>Analyzing cooperation in multi-agent systems</strong>, 
+            with a particular emphasis on understanding interactions between human and AI teammates 
+            and identifying when high performance does (and does not) imply true collaboration.
+            </li>
+            <li>
+            <strong>Designing human-aware adaptive agents</strong> by modeling human decision-making 
+            and leveraging hierarchical task representations to enable robust, generalizable coordination.
+            </li>
+            <li>
+            <strong>Studying human–LLM interaction</strong>, focusing on interpretability, trust, 
+            reasoning traces, and personalized communication in user-adaptive agentic systems.
+            </li>
+        </ul>
+
+        <p>
+        Broadly, I aim to build principled foundations for human–AI multi-agent systems 
+        that are robust, adaptive, and grounded in structured models of reasoning.
         </p>
 
         <p>
-        My long-term goal is to build rigorous foundations for human–AI multi-agent
-        systems that are robust, interpretable, and aligned with human objectives.
+        Outside research, I am a trained <strong>Kathak dancer</strong>. I enjoy reading widely—especially 
+        history and philosophy—and I spend as much time as possible hiking.
         </p>
 
-        <h3>Education</h3>
-
-        <p>
-        <strong>PhD in Computer Science</strong><br>
-        Arizona State University (2023–Present)<br>
-        Advisor: Prof. Subbarao Kambhampati
-        </p>
-
-        <p>
-        <strong>MS in Robotics and Autonomous Systems (AI)</strong><br>
-        Arizona State University (2021–2023)<br>
-        Thesis: <em>Adapting Robotic Systems to User Control</em><br>
-        Advisor: Prof. Yu ("Tony") Zhang
-        </p>
-
-        <p>
-        <strong>BS in Electrical Engineering</strong><br>
-        Delhi Technological University (2016–2020)
-        </p>
     </div>
 </section>
 
@@ -105,47 +104,48 @@
     <div class="container">
         <h2>Research</h2>
 
-        <p>
-        My research investigates how humans and AI agents can coordinate effectively
-        under uncertainty. I focus on structured evaluation and modeling of cooperation
-        in multi-agent systems, particularly when agents differ in reasoning capabilities,
-        observability, and adaptability.
-        </p>
-
-        <h3>Research Themes</h3>
-        <ul>
-            <li>Human–AI Teaming and Interdependence Analysis</li>
-            <li>Multi-Agent Reinforcement Learning</li>
-            <li>LLM-Based Planning and Agentic Systems</li>
-            <li>Hierarchical Task Representations</li>
-            <li>Evaluation Frameworks for Cooperative AI</li>
-        </ul>
-
-        <h3>Selected Research Projects</h3>
-
         <div class="project">
-            <h4>Interdependence Metrics for Human–AI Teaming</h4>
+            <h4><a href="project-nested-training.html">Nested Training for Mutual Adaptation in Human–AI Teaming</a></h4>
+            <p><em>October 2025 – Present</em></p>
             <p>
-            Developed a formal framework to quantify interdependencies in collaborative teams,
-            enabling principled evaluation of zero-shot cooperation beyond task success.
+            Developed a nested training regime grounded in finitely nested I-POMDPs 
+            to enable structured mutual adaptation in human–AI teams. 
+            Demonstrated robust generalization to unseen adaptive partners.
+            Extended Abstract accepted at <em>25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)</em>.
             </p>
         </div>
 
         <div class="project">
-            <h4>LLM Planning with Hierarchical Task Networks (HTN-Bench)</h4>
+            <h4><a href="project-interpretable-traces.html">Do Cognitively Interpretable Reasoning Traces Improve LLM Performance?</a></h4>
+            <p><em>August 2025 – December 2025</em></p>
             <p>
-            Evaluating large language models on structured planning benchmarks using
-            external verification and iterative feedback (LLM-Modulo) to improve plan correctness.
+            Investigated the relationship between interpretability and task performance 
+            in LLM reasoning traces. Fine-tuned open-weight models and conducted 
+            human-subject evaluations.
+            Presented at the <em>NeurIPS 2025 CogInterp Workshop</em>.
             </p>
         </div>
 
         <div class="project">
-            <h4>Learning to Cooperate Beyond Self-Play</h4>
+            <h4><a href="project-interdependence.html">Who is Helping Whom? Analyzing Interdependencies to Evaluate Cooperation in Human–AI Teaming</a></h4>
+            <p><em>September 2024 – July 2025</em></p>
             <p>
-            Studied behavioral divergence between self-play agents and human teammates,
-            identifying limitations of self-play training in collaborative environments.
+            Proposed a metric of constructive interdependence to evaluate cooperation 
+            beyond task reward in human–AI teams.
+            Accepted at <em>AAAI 2026</em> and presented at <em>RLC 2025</em>.
             </p>
         </div>
+
+        <div class="project">
+            <h4><a href="project-self-play.html">On the Pitfalls of Learning to Cooperate with Self-Play Agents</a></h4>
+            <p><em>August 2023 – December 2023</em></p>
+            <p>
+            Examined the gap between self-play training and human collaboration 
+            in cooperative MARL.
+            Late-Breaking Report at the <em>ACM/IEEE International Conference on Human-Robot Interaction (HRI 2024)</em>.
+            </p>
+        </div>
+
     </div>
 </section>
 
@@ -155,71 +155,74 @@
         <h2>Publications</h2>
 
         <p>
-        For a complete and up-to-date list, see my
+        See my 
         <a href="https://scholar.google.com/citations?user=BxS1bVcAAAAJ&hl=en" target="_blank">
-        Google Scholar profile</a>.
+        Google Scholar
+        </a> for a complete list.
         </p>
 
-        <h3>Selected Publications</h3>
+        <div class="publication">
+            <p><strong>Nested Training for Mutual Adaptation in Human–AI Teaming</strong></p>
+            <p><em>AAMAS 2026 – Extended Abstract</em></p>
+        </div>
 
         <div class="publication">
-            <p><strong>Who is Helping Whom? Analyzing Inter-dependencies to Evaluate Zero-Shot Cooperation in Teams</strong></p>
-            <p>Upasana Biswas, Vardhan Palod, Siddhant Bhambri, Subbarao Kambhampati</p>
-            <p><em>AAAI Conference on Artificial Intelligence (AAAI 2026)</em></p>
+            <p><strong>Who is Helping Whom? Analyzing Interdependencies to Evaluate Cooperation in Human–AI Teaming</strong></p>
+            <p><em>AAAI 2026</em></p>
+        </div>
+
+        <div class="publication">
+            <p><strong>Do Cognitively Interpretable Reasoning Traces Improve LLM Performance?</strong></p>
+            <p><em>NeurIPS 2025 CogInterp Workshop</em></p>
         </div>
 
         <div class="publication">
             <p><strong>On the Pitfalls of Learning to Cooperate with Self-Play Agents</strong></p>
-            <p>Upasana Biswas, Lin Guan, Subbarao Kambhampati</p>
-            <p><em>ACM/IEEE International Conference on Human-Robot Interaction (HRI 2024)</em></p>
-        </div>
-
-        <div class="publication">
-            <p><strong>Hierarchical Reinforcement Learning for Ad Hoc Teaming</strong></p>
-            <p>Stéphane Aroca-Ouellette et al., Upasana Biswas</p>
-            <p><em>International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023)</em></p>
+            <p><em>HRI 2024 (Late-Breaking Report)</em></p>
         </div>
 
     </div>
 </section>
 
 
-<section id="teaching" class="section section-alt">
+<section id="talks" class="section section-alt">
     <div class="container">
-        <h2>Teaching & Mentoring</h2>
+        <h2>Talks & Presentations</h2>
 
-        <div class="teaching-item">
-            <h4>Graduate Teaching Assistant – Planning and Learning (CSE 574)</h4>
-            <p>Arizona State University, Fall 2024</p>
-        </div>
-
-        <div class="teaching-item">
-            <h4>Undergraduate Research Mentorship</h4>
-            <p>Mentoring undergraduate students on projects in human–AI collaboration and LLM-based systems.</p>
-        </div>
+        <p>AAMAS 2026 – Extended Abstract Presentation</p>
+        <p>AAAI 2026 – Conference Presentation</p>
+        <p>Reinforcement Learning Conference (RLC) 2025 – Workshop Presentation</p>
+        <p>NeurIPS 2025 CogInterp Workshop – Oral/Poster Presentation</p>
+        <p>ACM/IEEE HRI 2024 – Late-Breaking Report Presentation</p>
 
     </div>
 </section>
 
 
-<section id="contact" class="section">
+<section id="teaching" class="section">
+    <div class="container">
+        <h2>Teaching</h2>
+        <p>
+        Graduate Teaching Assistant – Planning and Learning (CSE 574), 
+        Arizona State University (Fall 2024)
+        </p>
+    </div>
+</section>
+
+
+<section id="contact" class="section section-alt">
     <div class="container">
         <h2>Contact</h2>
-
         <p>
-        <strong>Email:</strong> 
-        <a href="mailto:ubiswas2@asu.edu">ubiswas2@asu.edu</a><br><br>
-
+        ubiswas2@asu.edu<br>
         School of Computing and Augmented Intelligence<br>
         Arizona State University<br>
-        Tempe, Arizona, USA
+        Tempe, AZ
         </p>
-
     </div>
 </section>
 
 </main>
-
 
 <footer>
     <div class="container">
@@ -227,8 +230,6 @@
         <p>Last updated: February 2026</p>
     </div>
 </footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>

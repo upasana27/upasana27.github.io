@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On the Pitfalls of Learning to Cooperate with Self-Play Agents - Upasana Biswas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-brand">Upasana Biswas</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#research">Research</a></li>
+            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="index.html#talks">Talks</a></li>
+            <li><a href="index.html#teaching">Teaching</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+
+<section class="section">
+    <div class="container">
+        <h1>On the Pitfalls of Learning to Cooperate with Self-Play Agents</h1>
+        
+        <p><em>August 2023 – December 2023</em></p>
+        
+        <div class="project-details">
+
+            <h2>Overview</h2>
+            <p>
+            This work investigates a key limitation of reinforcement learning for 
+            human–AI collaboration: agents trained via <strong>self-play</strong> often 
+            struggle to cooperate effectively with humans. While self-play has enabled 
+            major advances in multi-agent systems, it can produce coordination strategies 
+            that are brittle and incompatible with real human behavior.
+            </p>
+
+            <h2>Motivation</h2>
+            <p>
+            Self-play encourages agents to converge on conventions optimized for 
+            their co-trained partners. However, these conventions may be arbitrary 
+            and unintuitive to humans, leading to coordination breakdowns despite 
+            high self-play performance. We examine why this generalization gap arises 
+            and how it impacts human–robot teaming.
+            </p>
+
+            <h2>Approach</h2>
+            <p>
+            We analyze cooperative behavior in a collaborative task environment by 
+            comparing agents trained purely via self-play against agents trained 
+            with more diverse or human-inspired partner models. Through controlled 
+            experiments, we study how conventions emerge, how stable they are, 
+            and how well they transfer to interaction with previously unseen partners.
+            </p>
+
+            <h2>Key Contributions</h2>
+            <ul>
+                <li>Identified systematic failures of self-play agents when paired with non-self-play collaborators.</li>
+                <li>Demonstrated how arbitrary coordination conventions emerge during co-training.</li>
+                <li>Provided empirical evidence of the generalization gap between self-play and human collaboration.</li>
+            </ul>
+
+            <h2>Results</h2>
+            <p>
+            Our results show that strong self-play performance does not guarantee 
+            effective cooperation with new partners. Agents frequently overfit 
+            to partner-specific conventions, resulting in unstable or incompatible 
+            coordination when paired with humans or previously unseen teammates. 
+            These findings highlight the need for training paradigms that explicitly 
+            account for partner diversity and human adaptability.
+            </p>
+
+            <h2>Publications</h2>
+            <p>
+                <strong>Late-Breaking Report at the ACM/IEEE International Conference on Human-Robot Interaction (HRI 2024)</strong>.
+            </p>
+            <p>
+                <a href="https://dl.acm.org/doi/10.1145/3610978.3640692" target="_blank">
+                Paper (ACM Digital Library)
+                </a>
+            </p>
+
+            <h2>Resources</h2>
+            <p>
+            Additional experimental details are available in the published paper. 
+            Please reach out for questions or collaboration inquiries.
+            </p>
+
+        </div>
+
+        <div style="margin-top: 2rem;">
+            <a href="index.html#research" class="back-link">← Back to Research</a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Upasana Biswas</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

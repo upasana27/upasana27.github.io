@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who is Helping Whom? Analyzing Interdependencies to Evaluate Cooperation in Human–AI Teaming - Upasana Biswas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-brand">Upasana Biswas</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#research">Research</a></li>
+            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="index.html#talks">Talks</a></li>
+            <li><a href="index.html#teaching">Teaching</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+
+<section class="section">
+    <div class="container">
+        <h1>Who is Helping Whom? Analyzing Interdependencies to Evaluate Cooperation in Human–AI Teaming</h1>
+        
+        <p><em>September 2024 – July 2025</em></p>
+        
+        <div class="project-details">
+
+            <h2>Overview</h2>
+            <p>
+            This project investigates a fundamental question in human–AI teaming: 
+            <strong>Does high task performance imply true cooperation?</strong> 
+            Most existing work evaluates collaboration using reward or success rate, 
+            but these metrics do not capture whether teammates genuinely coordinate or 
+            simply act independently while compensating for one another. 
+            We introduce a formal framework for measuring <em>constructive interdependence</em> 
+            — a principled notion of how much teammates rely on each other’s actions to achieve shared goals.
+            </p>
+
+            <h2>Motivation</h2>
+            <p>
+            In cooperative environments, an AI system can achieve high rewards without 
+            meaningfully helping its partner. This raises a critical issue: are we optimizing 
+            for effective teamwork, or merely for task completion? 
+            We argue that reward alone is insufficient to evaluate cooperation. 
+            Instead, we need metrics that quantify <em>how</em> agents support and depend on one another.
+            </p>
+
+            <h2>Approach</h2>
+            <p>
+            We formalize cooperation using a symbolic STRIPS-based representation and 
+            define <strong>constructive interdependence</strong> as a metric that captures 
+            sequential and reciprocal reliance between teammates’ actions. 
+            Our method analyzes how one agent’s actions enable, constrain, or shape the 
+            other’s progress. We apply this framework in the Overcooked domain, evaluating 
+            state-of-the-art zero-shot coordination agents paired with learned partners 
+            and real human collaborators.
+            </p>
+
+            <h2>Key Contributions</h2>
+            <ul>
+                <li>Introduced <strong>constructive interdependence</strong> as a formal metric for evaluating cooperation quality.</li>
+                <li>Demonstrated that high task reward does not necessarily correlate with cooperative behavior.</li>
+                <li>Provided empirical analysis of coordination dynamics in both human–AI and AI–AI teaming settings.</li>
+            </ul>
+
+            <h2>Results</h2>
+            <p>
+            Our experiments reveal a striking disconnect between reward and cooperation: 
+            several high-performing agents exhibit low interdependence, indicating limited 
+            genuine coordination. In contrast, agents with higher interdependence scores 
+            demonstrate more stable and interpretable teamwork. These findings highlight 
+            the limitations of reward-only evaluation and emphasize the importance of 
+            measuring interaction structure in collaborative AI systems.
+            </p>
+
+            <h2>Publications</h2>
+            <p><strong>Accepted at AAAI 2026 and RLC 2025</strong></p>
+            <p>
+                <a href="https://arxiv.org/abs/2502.06976" target="_blank">arXiv</a> |
+                <a href="https://openreview.net/forum?id=uQ09AYZB4w" target="_blank">OpenReview</a>
+            </p>
+            <p>
+                Presented at the <strong>AAAI 2026 Conference on Artificial Intelligence</strong> 
+                and the <strong>Reinforcement Learning Conference (RLC) 2025</strong>.
+            </p>
+
+            <h2>Resources</h2>
+            <p>
+            Code and evaluation scripts will be released upon publication. 
+            Please reach out if you are interested in collaboration or early access.
+            </p>
+
+        </div>
+
+        <div style="margin-top: 2rem;">
+            <a href="index.html#research" class="back-link">← Back to Research</a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Upasana Biswas</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
