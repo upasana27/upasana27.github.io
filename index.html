@@ -3,275 +3,548 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upasana Biswas | PhD Student</title>
+    <title>Upasana Biswas | PhD Student | Arizona State University</title>
+    <meta name="description" content="Upasana Biswas – PhD student in Computer Science at Arizona State University. Research in Human–AI Collaboration, Multi-Agent Systems, and LLM-Based Agents.">
+    <meta name="keywords" content="Upasana Biswas, PhD, Computer Science, Arizona State University, Human-AI Collaboration, Multi-Agent Systems, LLM, AI">
+    <meta name="author" content="Upasana Biswas">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Upasana Biswas | PhD Student | ASU">
+    <meta property="og:description" content="PhD student in Computer Science at Arizona State University. Research in Human–AI Collaboration, Multi-Agent Systems, and LLM-Based Agents.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://upasana27.github.io">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Upasana Biswas | PhD Student | ASU">
+    <meta name="twitter:description" content="PhD student in Computer Science at Arizona State University. Research in Human–AI Collaboration, Multi-Agent Systems, and LLM-Based Agents.">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <!-- ================= NAVIGATION ================= -->
 
-<nav class="navbar">
+<nav class="navbar" id="navbar">
     <div class="container">
-        <div class="nav-brand">Upasana Biswas</div>
+        <div class="nav-brand">UB</div>
         <ul class="nav-menu">
             <li><a href="#about">About</a></li>
+            <li><a href="#news">News</a></li>
             <li><a href="#research">Research</a></li>
-            <li><a href="#pui wantblications">Publications</a></li>
-            <li><a href="#talks">Talks</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#teaching">Teaching</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
     </div>
 </nav>
 
 
 <!-- ================= HERO ================= -->
 
-<header class="hero">
+<header class="hero" id="hero">
+    <div class="hero-overlay"></div>
     <div class="container">
         <div class="hero-content">
-            <img src="dp(2).png" alt="Upasana Biswas" class="profile-photo">
+            <div class="hero-image-wrapper">
+                <img src="dp(2).png" alt="Upasana Biswas" class="profile-photo">
+            </div>
             <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
                 <h1>Upasana Biswas</h1>
-                <p class="subtitle">
-                    PhD Student in Computer Science<br>
-                    Arizona State University
+                <div class="typewriter-wrapper">
+                    <span class="typewriter-prefix">I am a </span>
+                    <span class="typewriter-text" id="typewriter"></span>
+                    <span class="typewriter-cursor">|</span>
+                </div>
+                <p class="hero-affiliation">
+                    <i class="fas fa-university"></i>
+                    PhD Student &middot; Computer Science &middot; Arizona State University
                 </p>
-                <p class="research-interests">
-                    Human–AI Collaboration · Multi-Agent Systems · 
-                    LLM-Based Agents · Cooperative Decision-Making
-                </p>
+                <div class="hero-tags">
+                    <span class="hero-tag">Human&ndash;AI Collaboration</span>
+                    <span class="hero-tag">Multi-Agent Systems</span>
+                    <span class="hero-tag">LLM-Based Agents</span>
+                    <span class="hero-tag">Cooperative Decision-Making</span>
+                </div>
                 <div class="social-links">
-                    <a href="https://scholar.google.com/citations?user=BxS1bVcAAAAJ&hl=en" target="_blank">
+                    <a href="https://scholar.google.com/citations?user=BxS1bVcAAAAJ&hl=en" target="_blank" title="Google Scholar">
                         <i class="fas fa-graduation-cap"></i>
                     </a>
-                    <a href="mailto:ubiswas2@asu.edu">
+                    <a href="mailto:ubiswas2@asu.edu" title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="https://linkedin.com/in/upasana-biswas-758113169" target="_blank">
+                    <a href="https://linkedin.com/in/upasana-biswas-758113169" target="_blank" title="LinkedIn">
                         <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/upasana27" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
                     </a>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="scroll-indicator">
+        <span>Scroll Down</span>
+        <i class="fas fa-chevron-down"></i>
     </div>
 </header>
 
 
 <main>
 
-<!-- ================= ABOUT ================= -->
+<!-- ================= ABOUT / MY STORY ================= -->
 
-<section id="about" class="section">
+<section id="about" class="section fade-in">
     <div class="container">
-        <h2>About</h2>
+        <h2 class="section-title"><span class="section-icon">&#128214;</span> My Story</h2>
 
-        <p>
-        I am a PhD student in Computer Science at Arizona State University, 
-        advised by Prof. Subbarao Kambhampati. My work sits at the intersection 
-        of human–AI collaboration, multi-agent systems, and large language model (LLM)-based agents.
-        </p>
+        <div class="story-content">
+            <p>
+            I am a PhD student in Computer Science at
+            <a href="https://www.asu.edu" target="_blank">Arizona State University</a>,
+            advised by <a href="http://rakaposhi.eas.asu.edu/" target="_blank">Prof. Subbarao Kambhampati</a>
+            at the <a href="https://yochan-lab.github.io/home/" target="_blank">Yochan Lab</a>.
+            My work sits at the intersection of human&ndash;AI collaboration, multi-agent systems,
+            and large language model (LLM)-based agents.
+            </p>
 
-        <p>
-        My research focuses on three main directions:
-        </p>
+            <p>My research focuses on three main directions:</p>
 
-        <ul>
-            <li>
-            <strong>Analyzing cooperation in multi-agent systems</strong>, 
-            with a particular emphasis on understanding interactions between human and AI teammates 
-            and identifying when high performance does (and does not) imply true collaboration.
-            </li>
-            <li>
-            <strong>Designing human-aware adaptive agents</strong> by modeling human decision-making 
-            and leveraging hierarchical task representations to enable robust, generalizable coordination.
-            </li>
-            <li>
-            <strong>Studying human–LLM interaction</strong>, focusing on interpretability, trust, 
-            reasoning traces, and personalized communication in user-adaptive agentic systems.
-            </li>
-        </ul>
+            <div class="research-directions">
+                <div class="direction-card">
+                    <div class="direction-icon">&#129309;</div>
+                    <h4>Analyzing Cooperation in Multi-Agent Systems</h4>
+                    <p>Understanding interactions between human and AI teammates
+                    and identifying when high performance does (and does not) imply true collaboration.</p>
+                </div>
+                <div class="direction-card">
+                    <div class="direction-icon">&#129504;</div>
+                    <h4>Designing Human-Aware Adaptive Agents</h4>
+                    <p>Modeling human decision-making and leveraging hierarchical task representations
+                    to enable robust, generalizable coordination.</p>
+                </div>
+                <div class="direction-card">
+                    <div class="direction-icon">&#128172;</div>
+                    <h4>Studying Human&ndash;LLM Interaction</h4>
+                    <p>Focusing on interpretability, trust, reasoning traces, and personalized
+                    communication in user-adaptive agentic systems.</p>
+                </div>
+            </div>
 
-        <p>
-        Broadly, I aim to build principled foundations for human–AI multi-agent systems 
-        that are robust, adaptive, and grounded in structured models of reasoning.
-        </p>
+            <p>
+            Broadly, I aim to build principled foundations for human&ndash;AI multi-agent systems
+            that are robust, adaptive, and grounded in structured models of reasoning.
+            </p>
 
-        <p>
-        Outside research, I am a trained <strong>Kathak dancer</strong>. I enjoy reading widely—especially 
-        history and philosophy—and I spend as much time as possible hiking.
-        </p>
+            <p class="personal-note">
+            Outside research, I am a trained <strong>Kathak dancer</strong> &#128131;.
+            I enjoy reading widely&mdash;especially history and philosophy&mdash;and
+            I spend as much time as possible hiking &#9968;&#65039;.
+            </p>
+        </div>
+    </div>
+</section>
 
+
+<!-- ================= NEWS & RECOGNITION ================= -->
+
+<section id="news" class="section section-alt fade-in">
+    <div class="container">
+        <h2 class="section-title"><span class="section-icon">&#128240;</span> Latest News</h2>
+
+        <div class="news-grid">
+            <div class="news-table-wrapper">
+                <table class="news-table">
+                    <tbody>
+                        <tr>
+                            <td class="news-date">Feb 2026</td>
+                            <td>Extended Abstract accepted at <strong>AAMAS 2026</strong> on Nested Training for Mutual Adaptation <span class="badge badge-new">NEW</span></td>
+                        </tr>
+                        <tr>
+                            <td class="news-date">Dec 2025</td>
+                            <td>Paper accepted at <strong>AAAI 2026</strong> &mdash; "Who is Helping Whom?" &#127881;</td>
+                        </tr>
+                        <tr>
+                            <td class="news-date">Oct 2025</td>
+                            <td>Two papers presented at <strong>NeurIPS 2025</strong> CogInterp &amp; LAW Workshops</td>
+                        </tr>
+                        <tr>
+                            <td class="news-date">Jul 2025</td>
+                            <td>Presented interdependence work at <strong>RLC 2025</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="news-date">Mar 2024</td>
+                            <td>Late-Breaking Report presented at <strong>HRI 2024</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </section>
 
 
 <!-- ================= RESEARCH ================= -->
 
-<section id="research" class="section section-alt">
+<section id="research" class="section fade-in">
     <div class="container">
-        <h2>Research</h2>
+        <h2 class="section-title"><span class="section-icon">&#128300;</span> Research Projects</h2>
 
-        <div class="project">
-            <h4><a href="project-nested-training.html">Nested Training for Mutual Adaptation in Human–AI Teaming</a></h4>
-            <p><em>October 2025 – Present</em></p>
-            <p>
-            Developed a nested training regime grounded in finitely nested I-POMDPs 
-            to enable structured mutual adaptation in human–AI teams. 
-            Demonstrated robust generalization to unseen adaptive partners.
-            Extended Abstract accepted at <em>25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)</em>.
-            </p>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-venue-tag">AAMAS 2026</div>
+                <h4><a href="project-nested-training.html">Nested Training for Mutual Adaptation in Human&ndash;AI Teaming</a></h4>
+                <p class="project-date"><i class="far fa-calendar"></i> October 2025 &ndash; Present</p>
+                <p>
+                Developed a nested training regime grounded in finitely nested I-POMDPs
+                to enable structured mutual adaptation in human&ndash;AI teams.
+                Demonstrated robust generalization to unseen adaptive partners.
+                </p>
+                <div class="project-tags">
+                    <span>I-POMDPs</span>
+                    <span>Human&ndash;AI Teaming</span>
+                    <span>Multi-Agent RL</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-venue-tag">NeurIPS 2025 Workshop</div>
+                <h4><a href="project-interpretable-traces.html">Do Cognitively Interpretable Reasoning Traces Improve LLM Performance?</a></h4>
+                <p class="project-date"><i class="far fa-calendar"></i> August 2025 &ndash; December 2025</p>
+                <p>
+                Investigated the relationship between interpretability and task performance
+                in LLM reasoning traces. Fine-tuned open-weight models and conducted
+                human-subject evaluations.
+                </p>
+                <div class="project-tags">
+                    <span>LLM Reasoning</span>
+                    <span>Interpretability</span>
+                    <span>Human Study</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-venue-tag">AAAI 2026</div>
+                <h4><a href="project-interdependence.html">Who is Helping Whom? Analyzing Interdependencies in Human&ndash;AI Teaming</a></h4>
+                <p class="project-date"><i class="far fa-calendar"></i> September 2024 &ndash; July 2025</p>
+                <p>
+                Proposed a metric of constructive interdependence to evaluate cooperation
+                beyond task reward in human&ndash;AI teams.
+                </p>
+                <div class="project-tags">
+                    <span>Cooperation Metrics</span>
+                    <span>Zero-Shot Coordination</span>
+                    <span>Multi-Agent</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-venue-tag">HRI 2024</div>
+                <h4><a href="project-self-play.html">On the Pitfalls of Learning to Cooperate with Self-Play Agents</a></h4>
+                <p class="project-date"><i class="far fa-calendar"></i> August 2023 &ndash; December 2023</p>
+                <p>
+                Examined the gap between self-play training and human collaboration
+                in cooperative MARL.
+                </p>
+                <div class="project-tags">
+                    <span>Self-Play</span>
+                    <span>Cooperative MARL</span>
+                    <span>Human-Robot Interaction</span>
+                </div>
+            </div>
+
         </div>
-
-        <div class="project">
-            <h4><a href="project-interpretable-traces.html">Do Cognitively Interpretable Reasoning Traces Improve LLM Performance?</a></h4>
-            <p><em>August 2025 – December 2025</em></p>
-            <p>
-            Investigated the relationship between interpretability and task performance 
-            in LLM reasoning traces. Fine-tuned open-weight models and conducted 
-            human-subject evaluations.
-            Presented at the <em>NeurIPS 2025 CogInterp Workshop</em>.
-            </p>
-        </div>
-
-        <div class="project">
-            <h4><a href="project-interdependence.html">Who is Helping Whom? Analyzing Interdependencies to Evaluate Cooperation in Human–AI Teaming</a></h4>
-            <p><em>September 2024 – July 2025</em></p>
-            <p>
-            Proposed a metric of constructive interdependence to evaluate cooperation 
-            beyond task reward in human–AI teams.
-            Accepted at <em>AAAI 2026</em> and presented at <em>RLC 2025</em>.
-            </p>
-        </div>
-
-        <div class="project">
-            <h4><a href="project-self-play.html">On the Pitfalls of Learning to Cooperate with Self-Play Agents</a></h4>
-            <p><em>August 2023 – December 2023</em></p>
-            <p>
-            Examined the gap between self-play training and human collaboration 
-            in cooperative MARL.
-            Late-Breaking Report at the <em>ACM/IEEE International Conference on Human-Robot Interaction (HRI 2024)</em>.
-            </p>
-        </div>
-
     </div>
 </section>
 
 
 <!-- ================= PUBLICATIONS ================= -->
 
-<section id="publications" class="section">
+<section id="publications" class="section section-alt fade-in">
     <div class="container">
-        <h2>Publications</h2>
+        <h2 class="section-title"><span class="section-icon">&#128218;</span> Publications</h2>
 
-        <p>
-        See my 
-        <a href="https://scholar.google.com/citations?user=BxS1bVcAAAAJ&hl=en" target="_blank">
-        Google Scholar
-        </a> for a complete list.
+        <p class="scholar-link">
+            <a href="https://scholar.google.com/citations?user=BxS1bVcAAAAJ&hl=en" target="_blank">
+                <i class="fas fa-graduation-cap"></i> View full list on Google Scholar &rarr;
+            </a>
         </p>
 
-        <div class="publication">
-            <p><strong>Nested Training for Mutual Adaptation in Human–AI Teaming</strong></p>
-            <p>Upasana Biswas, Durgesh Kalwar, Subbarao Kambhampati, Sarath Sreedharan</p>
-            <p><em>25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026) – Extended Abstract</em></p>
-        </div>
+        <div class="publications-list">
 
-        <div class="publication">
-            <p><strong>Who is Helping Whom? Analyzing Inter-dependencies to Evaluate Zero-Shot Cooperation in Teams</strong></p>
-            <p>Upasana Biswas, Vardhan Palod, Siddhant Bhambri, Subbarao Kambhampati</p>
-            <p><em>AAAI Conference on Artificial Intelligence (AAAI 2026)</em></p>
-            <p><a href="https://openreview.net/forum?id=uQ09AYZB4w" target="_blank">Paper</a></p>
-        </div>
+            <div class="pub-item">
+                <div class="pub-year">2026</div>
+                <div class="pub-details">
+                    <span class="pub-venue-badge badge-aamas">AAMAS 2026</span>
+                    <p class="pub-title">Nested Training for Mutual Adaptation in Human&ndash;AI Teaming</p>
+                    <p class="pub-authors">Upasana Biswas, Durgesh Kalwar, Subbarao Kambhampati, Sarath Sreedharan</p>
+                    <p class="pub-venue">25th International Conference on Autonomous Agents and Multiagent Systems &ndash; Extended Abstract</p>
+                </div>
+            </div>
 
-        <div class="publication">
-            <p><strong>Do Cognitively Interpretable Reasoning Traces Improve LLM Performance?</strong></p>
-            <p>Siddhant Bhambri*, Upasana Biswas*, Subbarao Kambhampati</p>
-            <p><em>NeurIPS 2025 Workshop on Cognitive Aspects of Interpretability (CogInterp) and Learning to Act Workshop (LAW)</em></p>
-            <p><a href="https://arxiv.org/abs/2505.13792" target="_blank">Paper</a></p>
-        </div>
+            <div class="pub-item">
+                <div class="pub-year">2026</div>
+                <div class="pub-details">
+                    <span class="pub-venue-badge badge-aaai">AAAI 2026</span>
+                    <p class="pub-title">Who is Helping Whom? Analyzing Inter-dependencies to Evaluate Zero-Shot Cooperation in Teams</p>
+                    <p class="pub-authors"><strong>Upasana Biswas</strong>, Vardhan Palod, Siddhant Bhambri, Subbarao Kambhampati</p>
+                    <p class="pub-venue">AAAI Conference on Artificial Intelligence</p>
+                    <div class="pub-links">
+                        <a href="https://openreview.net/forum?id=uQ09AYZB4w" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="publication">
-            <p><strong>Interpretable Traces, Unexpected Outcomes</strong></p>
-            <p>Siddhant Bhambri, Upasana Biswas, Subbarao Kambhampati</p>
-            <p><em>NeurIPS 2025 Workshop on Cognitive Aspects of Interpretability (CogInterp)</em></p>
-            <p><a href="https://arxiv.org/abs/2505.13792" target="_blank">Paper</a></p>
-        </div>
+            <div class="pub-item">
+                <div class="pub-year">2025</div>
+                <div class="pub-details">
+                    <span class="pub-venue-badge badge-neurips">NeurIPS 2025 Workshop</span>
+                    <p class="pub-title">Do Cognitively Interpretable Reasoning Traces Improve LLM Performance?</p>
+                    <p class="pub-authors">Siddhant Bhambri*, <strong>Upasana Biswas</strong>*, Subbarao Kambhampati</p>
+                    <p class="pub-venue">NeurIPS 2025 Workshop on Cognitive Aspects of Interpretability (CogInterp) and Learning to Act Workshop (LAW)</p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2505.13792" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="publication">
-            <p><strong>On the Pitfalls of Learning to Cooperate with Self-Play Agents</strong></p>
-            <p>Upasana Biswas, Lin Guan, Subbarao Kambhampati</p>
-            <p><em>ACM/IEEE International Conference on Human-Robot Interaction (HRI 2024) – Late-Breaking Report</em></p>
-            <p><a href="https://dl.acm.org/doi/10.1145/3610978.3640692" target="_blank">Paper</a></p>
-        </div>
+            <div class="pub-item">
+                <div class="pub-year">2025</div>
+                <div class="pub-details">
+                    <span class="pub-venue-badge badge-neurips">NeurIPS 2025 Workshop</span>
+                    <p class="pub-title">Interpretable Traces, Unexpected Outcomes</p>
+                    <p class="pub-authors">Siddhant Bhambri, <strong>Upasana Biswas</strong>, Subbarao Kambhampati</p>
+                    <p class="pub-venue">NeurIPS 2025 Workshop on Cognitive Aspects of Interpretability (CogInterp)</p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2505.13792" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="publication">
-            <p><strong>Hierarchical Reinforcement Learning for Ad Hoc Teaming</strong></p>
-            <p>Stéphane Aroca-Ouellette, Vaibhav V Unhelkar, Upasana Biswas, Lin Guan, Cassandra Kent, Rhys Newbury, Kursat Acar, Matthew C Fontaine, Rohit Desaraju, Suzanne Barber, Jason Mather, Aishwarya Chakravarthy, Harshith Venugopal, Stefanos Nikolaidis</p>
-            <p><em>International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023)</em></p>
-            <p><a href="https://dl.acm.org/doi/10.5555/3545946.3598926" target="_blank">Paper</a></p>
-        </div>
+            <div class="pub-item">
+                <div class="pub-year">2024</div>
+                <div class="pub-details">
+                    <span class="pub-venue-badge badge-hri">HRI 2024</span>
+                    <p class="pub-title">On the Pitfalls of Learning to Cooperate with Self-Play Agents</p>
+                    <p class="pub-authors"><strong>Upasana Biswas</strong>, Lin Guan, Subbarao Kambhampati</p>
+                    <p class="pub-venue">ACM/IEEE International Conference on Human-Robot Interaction &ndash; Late-Breaking Report</p>
+                    <div class="pub-links">
+                        <a href="https://dl.acm.org/doi/10.1145/3610978.3640692" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="publication">
-            <p><strong>Adapting Robotic Systems to User Control</strong></p>
-            <p>Upasana Biswas</p>
-            <p><em>Master's Thesis, Arizona State University (2023)</em></p>
-            <p><a href="https://keep.lib.asu.edu/items/189263" target="_blank">Thesis</a></p>
-        </div>
+            <div class="pub-item">
+                <div class="pub-year">2023</div>
+                <div class="pub-details">
+                    <span class="pub-venue-badge badge-aamas">AAMAS 2023</span>
+                    <p class="pub-title">Hierarchical Reinforcement Learning for Ad Hoc Teaming</p>
+                    <p class="pub-authors">S. Aroca-Ouellette, V. V Unhelkar, <strong>Upasana Biswas</strong>, Lin Guan, C. Kent, R. Newbury, et al.</p>
+                    <p class="pub-venue">International Conference on Autonomous Agents and Multiagent Systems</p>
+                    <div class="pub-links">
+                        <a href="https://dl.acm.org/doi/10.5555/3545946.3598926" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="publication">
-            <p><strong>Improving Behavior-Based Swarm Control Using Partially Specified Human Preferences</strong></p>
-            <p>Upasana Biswas</p>
-            <p><em>MORE Symposium, Arizona State University (2023)</em></p>
-            <p><a href="https://forge.engineering.asu.edu/furiproject/improving-behavior-based-swarm-control-using-partially-specified-human-preferences/" target="_blank">Poster</a></p>
-        </div>
+            <div class="pub-item">
+                <div class="pub-year">2023</div>
+                <div class="pub-details">
+                    <span class="pub-venue-badge badge-thesis">Thesis</span>
+                    <p class="pub-title">Adapting Robotic Systems to User Control</p>
+                    <p class="pub-authors"><strong>Upasana Biswas</strong></p>
+                    <p class="pub-venue">Master's Thesis, Arizona State University</p>
+                    <div class="pub-links">
+                        <a href="https://keep.lib.asu.edu/items/189263" target="_blank"><i class="fas fa-book"></i> Thesis</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="pub-item">
+                <div class="pub-year">2023</div>
+                <div class="pub-details">
+                    <span class="pub-venue-badge badge-other">Symposium</span>
+                    <p class="pub-title">Improving Behavior-Based Swarm Control Using Partially Specified Human Preferences</p>
+                    <p class="pub-authors"><strong>Upasana Biswas</strong></p>
+                    <p class="pub-venue">MORE Symposium, Arizona State University</p>
+                    <div class="pub-links">
+                        <a href="https://forge.engineering.asu.edu/furiproject/improving-behavior-based-swarm-control-using-partially-specified-human-preferences/" target="_blank"><i class="fas fa-image"></i> Poster</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education" class="section fade-in">
+    <div class="container">
+        <h2 class="section-title"><span class="section-icon">&#127891;</span> Education</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2023 &ndash; Present</div>
+                    <h4>Arizona State University</h4>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Tempe, Arizona, US</p>
+                    <p class="timeline-degree">PhD in Computer Science</p>
+                    <p>Graduate Research Assistant at <a href="https://yochan-lab.github.io/home/" target="_blank">Yochan Lab</a> under <a href="http://rakaposhi.eas.asu.edu/" target="_blank">Prof. Subbarao Kambhampati</a></p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2021 &ndash; 2023</div>
+                    <h4>Arizona State University</h4>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Tempe, Arizona, US</p>
+                    <p class="timeline-degree">M.S. in Computer Science</p>
+                    <p>Thesis: <a href="https://keep.lib.asu.edu/items/189263" target="_blank">Adapting Robotic Systems to User Control</a></p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2017 &ndash; 2021</div>
+                    <h4>Heritage Institute of Technology, Kolkata</h4>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Kolkata, West Bengal, India</p>
+                    <p class="timeline-degree">B.Tech. in Computer Science &amp; Engineering</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="section section-alt fade-in">
+    <div class="container">
+        <h2 class="section-title"><span class="section-icon">&#128736;&#65039;</span> Skills &amp; Technologies</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h4>Languages</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">&#128013; Python</span>
+                    <span class="skill-tag">&#9889; C++</span>
+                    <span class="skill-tag">&#9749; Java</span>
+                    <span class="skill-tag">&#128026; Bash</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Frameworks &amp; Libraries</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">&#128293; PyTorch</span>
+                    <span class="skill-tag">&#129303; HuggingFace</span>
+                    <span class="skill-tag">&#129504; TensorFlow</span>
+                    <span class="skill-tag">&#127918; OpenAI Gym</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Tools &amp; Platforms</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">&#128051; Docker</span>
+                    <span class="skill-tag">&#128202; Weights &amp; Biases</span>
+                    <span class="skill-tag">&#128295; Git</span>
+                    <span class="skill-tag">&#128039; Linux</span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 
 <!-- ================= TALKS ================= -->
 
-<section id="talks" class="section section-alt">
+<section id="talks" class="section fade-in">
     <div class="container">
-        <h2>Talks & Presentations</h2>
+        <h2 class="section-title"><span class="section-icon">&#127908;</span> Talks &amp; Presentations</h2>
 
-        <p>AAMAS 2026 – Extended Abstract Presentation</p>
-        <p>AAAI 2026 – Conference Presentation</p>
-        <p>Reinforcement Learning Conference (RLC) 2025 – Workshop Presentation</p>
-        <p>NeurIPS 2025 CogInterp Workshop – Oral/Poster Presentation</p>
-        <p>ACM/IEEE HRI 2024 – Late-Breaking Report Presentation</p>
-
+        <div class="talks-list">
+            <div class="talk-item">
+                <span class="talk-venue">AAMAS 2026</span>
+                <span class="talk-desc">Extended Abstract Presentation &ndash; Nested Training for Mutual Adaptation</span>
+            </div>
+            <div class="talk-item">
+                <span class="talk-venue">AAAI 2026</span>
+                <span class="talk-desc">Conference Presentation &ndash; Who is Helping Whom?</span>
+            </div>
+            <div class="talk-item">
+                <span class="talk-venue">RLC 2025</span>
+                <span class="talk-desc">Workshop Presentation &ndash; Interdependencies in Human&ndash;AI Teams</span>
+            </div>
+            <div class="talk-item">
+                <span class="talk-venue">NeurIPS 2025</span>
+                <span class="talk-desc">CogInterp Workshop &ndash; Interpretable Reasoning Traces</span>
+            </div>
+            <div class="talk-item">
+                <span class="talk-venue">HRI 2024</span>
+                <span class="talk-desc">Late-Breaking Report &ndash; Pitfalls of Self-Play Cooperation</span>
+            </div>
+        </div>
     </div>
 </section>
 
 
 <!-- ================= TEACHING ================= -->
 
-<section id="teaching" class="section">
+<section id="teaching" class="section section-alt fade-in">
     <div class="container">
-        <h2>Teaching</h2>
-        <p>
-        Graduate Teaching Assistant – Planning and Learning (CSE 574), 
-        Arizona State University (Fall 2024)
-        </p>
+        <h2 class="section-title"><span class="section-icon">&#128221;</span> Teaching</h2>
+        <div class="teaching-card">
+            <div class="teaching-role">Graduate Teaching Assistant</div>
+            <h4>CSE 574 &mdash; Planning and Learning</h4>
+            <p class="teaching-meta"><i class="fas fa-university"></i> Arizona State University &middot; <i class="far fa-calendar"></i> Fall 2024</p>
+        </div>
     </div>
 </section>
 
 
 <!-- ================= CONTACT ================= -->
 
-<section id="contact" class="section section-alt">
+<section id="contact" class="section fade-in">
     <div class="container">
-        <h2>Contact</h2>
-        <p>
-        ubiswas2@asu.edu<br>
-        School of Computing and Augmented Intelligence<br>
-        Arizona State University<br>
-        Tempe, AZ
-        </p>
+        <h2 class="section-title"><span class="section-icon">&#9993;&#65039;</span> Contact</h2>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <strong>Email</strong>
+                    <p><a href="mailto:ubiswas2@asu.edu">ubiswas2@asu.edu</a></p>
+                </div>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-building"></i>
+                <div>
+                    <strong>Affiliation</strong>
+                    <p>School of Computing and Augmented Intelligence<br>Arizona State University</p>
+                </div>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <strong>Location</strong>
+                    <p>Tempe, AZ</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -279,10 +552,19 @@
 
 <footer>
     <div class="container">
-        <p>&copy; 2026 Upasana Biswas</p>
-        <p>Last updated: February 2026</p>
+        <div class="footer-content">
+            <p>&copy; 2026 Upasana Biswas</p>
+            <div class="footer-links">
+                <a href="https://scholar.google.com/citations?user=BxS1bVcAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://linkedin.com/in/upasana-biswas-758113169" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/upasana27" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:ubiswas2@asu.edu"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="footer-updated">Last updated: March 2026</p>
+        </div>
     </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
