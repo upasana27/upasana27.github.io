@@ -247,49 +247,28 @@ a:hover {
     font-size: 1.02rem;
 }
 
-.research-pillars {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
-    margin: 1.5rem 0;
-}
-
-.pillar {
-    padding: 1.2rem;
-    background: var(--stone-50);
-    border: 1px solid var(--stone-200);
-    border-radius: var(--radius);
-    transition: var(--transition);
-}
-.pillar:hover {
-    border-color: var(--stone-300);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-
-.pillar h4 {
-    font-size: 0.92rem;
+.about-heading {
+    font-family: 'Source Serif 4', 'Georgia', serif;
+    font-size: 1.15rem;
     font-weight: 600;
     color: var(--stone-900);
-    margin-bottom: 0.4rem;
-}
-.pillar h4 i {
-    color: var(--rose-600);
-}
-.pillar p {
-    font-size: 0.88rem;
-    color: var(--stone-500);
-    margin-bottom: 0;
-    line-height: 1.6;
+    margin: 2rem 0 0.6rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--stone-200);
 }
 
-.aside {
-    padding: 1rem 1.2rem;
-    background: var(--rose-50);
+.about-heading:first-of-type {
+    margin-top: 1.5rem;
+}
+
+.key-insight {
+    background: var(--stone-50);
     border-left: 3px solid var(--rose-600);
+    padding: 0.9rem 1.2rem;
     border-radius: 0 var(--radius) var(--radius) 0;
-    font-size: 0.95rem;
-    color: var(--stone-700);
-    margin-top: 0.5rem;
+    font-weight: 500;
+    color: var(--stone-800);
+    margin: 1rem 0;
 }
 
 /* ---- NEWS ---- */
@@ -602,10 +581,6 @@ footer {
     .profile-photo {
         width: 160px;
         height: 160px;
-    }
-
-    .research-pillars {
-        grid-template-columns: 1fr;
     }
 
     .edu-item {
