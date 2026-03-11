@@ -3,107 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who is Helping Whom? Analyzing Interdependencies to Evaluate Cooperation in Human–AI Teaming - Upasana Biswas</title>
+    <title>Who is Helping Whom? – Upasana Biswas</title>
+    <meta name="description" content="Analyzing Inter-dependencies to Evaluate Cooperation in Human-AI Teaming. AAAI 2026.">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600;8..60,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project-styles.css">
 </head>
 
 <body>
 
 <nav class="navbar">
     <div class="container">
-        <div class="nav-brand">Upasana Biswas</div>
+        <a href="index.html" class="nav-brand">Upasana Biswas</a>
         <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#about">About</a></li>
             <li><a href="index.html#research">Research</a></li>
             <li><a href="index.html#publications">Publications</a></li>
-            <li><a href="index.html#talks">Talks</a></li>
-            <li><a href="index.html#teaching">Teaching</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
             <li><a href="index.html#contact">Contact</a></li>
         </ul>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
     </div>
 </nav>
 
 <main>
 
-<section class="section">
+<section class="project-hero">
     <div class="container">
-        <h1>Who is Helping Whom? Analyzing Interdependencies to Evaluate Cooperation in Human–AI Teaming</h1>
-        
-        <p><em>September 2024 – July 2025</em></p>
-        
-        <div class="project-details">
+        <h1>Who is Helping Whom?<br>Analyzing Inter-dependencies to Evaluate Cooperation in Human&ndash;AI Teaming</h1>
+        <p class="project-authors">
+            <strong><u>Upasana Biswas</u></strong>,
+            Vardhan Palod,
+            Siddhant Bhambri,
+            <a href="http://rakaposhi.eas.asu.edu/" target="_blank">Subbarao Kambhampati</a>
+        </p>
+        <p class="project-authors">School of Computing and AI, Arizona State University</p>
+        <div class="project-venue-line">
+            <span class="pub-badge badge-aaai">AAAI 2026</span>
+            <span class="venue-extra">Also presented at CoCoMARL Workshop, RLC 2025</span>
+        </div>
+        <div class="project-links">
+            <a href="https://arxiv.org/abs/2502.06976" target="_blank" class="link-arxiv"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="https://openreview.net/forum?id=uQ09AYZB4w" target="_blank" class="link-paper"><i class="fas fa-book"></i> OpenReview</a>
+            <a href="https://github.com/upasana27/coop-eval-user-study" target="_blank" class="link-code"><i class="fab fa-github"></i> Code</a>
+        </div>
+    </div>
+</section>
 
-            <h2>Overview</h2>
-            <p>
-            This project investigates a fundamental question in human–AI teaming: 
-            <strong>Does high task performance imply true cooperation?</strong> 
-            Most existing work evaluates collaboration using reward or success rate, 
-            but these metrics do not capture whether teammates genuinely coordinate or 
-            simply act independently while compensating for one another. 
-            We introduce a formal framework for measuring <em>constructive interdependence</em> 
-            — a principled notion of how much teammates rely on each other’s actions to achieve shared goals.
-            </p>
+<section class="section">
+    <div class="container project-body">
 
-            <h2>Motivation</h2>
-            <p>
-            In cooperative environments, an AI system can achieve high rewards without 
-            meaningfully helping its partner. This raises a critical issue: are we optimizing 
-            for effective teamwork, or merely for task completion? 
-            We argue that reward alone is insufficient to evaluate cooperation. 
-            Instead, we need metrics that quantify <em>how</em> agents support and depend on one another.
-            </p>
-
-            <h2>Approach</h2>
-            <p>
-            We formalize cooperation using a symbolic STRIPS-based representation and 
-            define <strong>constructive interdependence</strong> as a metric that captures 
-            sequential and reciprocal reliance between teammates’ actions. 
-            Our method analyzes how one agent’s actions enable, constrain, or shape the 
-            other’s progress. We apply this framework in the Overcooked domain, evaluating 
-            state-of-the-art zero-shot coordination agents paired with learned partners 
-            and real human collaborators.
-            </p>
-
-            <h2>Key Contributions</h2>
-            <ul>
-                <li>Introduced <strong>constructive interdependence</strong> as a formal metric for evaluating cooperation quality.</li>
-                <li>Demonstrated that high task reward does not necessarily correlate with cooperative behavior.</li>
-                <li>Provided empirical analysis of coordination dynamics in both human–AI and AI–AI teaming settings.</li>
-            </ul>
-
-            <h2>Results</h2>
-            <p>
-            Our experiments reveal a striking disconnect between reward and cooperation: 
-            several high-performing agents exhibit low interdependence, indicating limited 
-            genuine coordination. In contrast, agents with higher interdependence scores 
-            demonstrate more stable and interpretable teamwork. These findings highlight 
-            the limitations of reward-only evaluation and emphasize the importance of 
-            measuring interaction structure in collaborative AI systems.
-            </p>
-
-            <h2>Publications</h2>
-            <p><strong>Accepted at AAAI 2026 and RLC 2025</strong></p>
-            <p>
-                <a href="https://arxiv.org/abs/2502.06976" target="_blank">arXiv</a> |
-                <a href="https://openreview.net/forum?id=uQ09AYZB4w" target="_blank">OpenReview</a>
-            </p>
-            <p>
-                Presented at the <strong>AAAI 2026 Conference on Artificial Intelligence</strong> 
-                and the <strong>Reinforcement Learning Conference (RLC) 2025</strong>.
-            </p>
-
-            <h2>Resources</h2>
-            <p>
-            Link to code - 
-            Please reach out if you are interested in collaboration or early access.
-            </p>
-
+        <h2>TL;DR</h2>
+        <div class="result-highlight">
+            <p>State-of-the-art zero-shot cooperation agents achieve high task rewards but
+            exhibit remarkably <strong>low cooperation</strong>. We propose <em>constructive interdependence</em>&mdash;a
+            formal metric grounded in STRIPS&mdash;that reveals this gap. A 36-participant user study confirms
+            that task reward alone is an unreliable indicator of teamwork.</p>
         </div>
 
-        <div style="margin-top: 2rem;">
-            <a href="index.html#research" class="back-link">← Back to Research</a>
+        <h2>Motivation</h2>
+        <p>
+            In cooperative environments like Overcooked, an AI agent can achieve high rewards
+            without meaningfully helping its human partner. The human may compensate for an
+            idle or non-adaptive agent, resulting in high team scores that conceal deficiencies
+            in the agent&rsquo;s cooperative abilities.
+        </p>
+        <p>
+            This is especially problematic in <strong>Non-Required Cooperation (Non-RC)</strong>
+            settings, where one player can complete the task alone while the other remains idle.
+            Both strategies can yield similar task rewards despite vastly different levels of cooperation.
+            We need metrics that evaluate <em>how</em> agents support and depend on one another&mdash;not
+            just whether the task succeeds.
+        </p>
+
+        <figure class="figure-block">
+            <div class="figure-placeholder">
+                <p><strong>Figure 1.</strong> Two strategies to fill a pot with onions. The <em>coordinated</em>
+                strategy (right) where one agent places onions on the counter for the other to pick up
+                is more efficient, but requires genuine cooperation. The <em>independent</em> strategy (left)
+                achieves a similar reward without any coordination.</p>
+            </div>
+        </figure>
+
+        <h2>Approach: Constructive Interdependence</h2>
+        <p>
+            We formalize cooperation by mapping a two-player Markov game to a symbolic STRIPS
+            representation. Each agent&rsquo;s action is expressed as
+            &lang;preconditions, add-effects, delete-effects&rang;, letting us systematically
+            track when one agent&rsquo;s action effects satisfy another&rsquo;s preconditions.
+        </p>
+        <p>
+            We define <strong>constructive interdependence</strong> as a pair of actions
+            (a<sub>i</sub>, a<sub>j</sub>) where:
+        </p>
+        <ul>
+            <li>Agent j&rsquo;s action effect satisfies agent i&rsquo;s precondition (<em>interdependence</em>)</li>
+            <li>The interaction contributes to task completion (<em>goal-reaching</em>)</li>
+            <li>The object doesn&rsquo;t return to the giver in the same state (<em>non-looping</em>)</li>
+        </ul>
+        <p>
+            <strong>Example:</strong> Agent j places an onion on the counter (add-effect: <code>onion-on-counter</code>)
+            &rarr; Agent i picks it up (precondition: <code>onion-on-counter</code>) and puts it in the pot.
+            This is a constructive interdependence linked to the onion object.
+        </p>
+        <p>
+            The metric is <strong>domain-agnostic</strong>. We provide a fully modular
+            <a href="https://github.com/upasana27/coop-eval-user-study" target="_blank">software package</a>
+            with a Mapping Module (raw trajectories &rarr; symbolic STRIPS traces) and an Analysis Module
+            (detects and categorizes interdependencies). We also demonstrate it on a heterogeneous
+            Search and Rescue domain.
+        </p>
+
+        <h2>Experimental Setup</h2>
+        <p>
+            We evaluate four state-of-the-art ZSC agents&mdash;<strong>FCP</strong>, <strong>MEP</strong>,
+            <strong>HSP</strong>, and <strong>COLE</strong>&mdash;in the Overcooked domain across
+            two layouts:
+        </p>
+        <ul>
+            <li><strong>Forced Coordination (RC)</strong> &mdash; cooperation is structurally required</li>
+            <li><strong>Counter Circuit (Non-RC)</strong> &mdash; agents can complete the task independently</li>
+        </ul>
+        <p>
+            Each agent is paired with: (1)&nbsp;a scripted cooperative partner, (2)&nbsp;a copy of itself
+            (self-play), (3)&nbsp;learned human models (H<sub>proxy</sub>), and (4)&nbsp;real human
+            participants in a <strong>user study with 36 participants</strong> (ages 18&ndash;31,
+            24&nbsp;male, 12&nbsp;female, 64% with no prior Overcooked experience).
+        </p>
+
+        <h2>Key Results</h2>
+
+        <div class="result-highlight">
+            <p><strong>High reward &ne; high cooperation.</strong>
+            MEP achieves the highest task reward (43.33) paired with a cooperative partner,
+            but its constructive interdependence (Int<sub>cons</sub>&nbsp;=&nbsp;0.83) is far below the
+            cooperative upper bound (6.59). HSP and FCP show <strong>zero</strong> constructive
+            interdependence with <strong>100% rejection rates</strong> of cooperation attempts.</p>
+        </div>
+
+        <h3>Finding 1: ZSC agents reject cooperation</h3>
+        <p>
+            When paired with a scripted partner that consistently initiates coordination,
+            ZSC agents reject 76&ndash;100% of these attempts. Despite the partner&rsquo;s
+            consistent cooperative behavior, agents achieve rewards by acting independently.
+        </p>
+
+        <h3>Finding 2: RC vs. Non-RC reveals the gap</h3>
+        <ul>
+            <li>In <strong>RC layouts</strong>: Task reward and Int<sub>cons</sub> correlate strongly
+                (COLE: reward=200, Int<sub>cons</sub>=30.43) because cooperation is structurally forced.</li>
+            <li>In <strong>Non-RC layouts</strong>: The correlation breaks. COLE and HSP both achieve
+                reward=120 in self-play, but Int<sub>cons</sub> differs by 5&times; (10.23 vs. 1.82).</li>
+        </ul>
+
+        <h3>Finding 3: Humans try, agents don&rsquo;t reciprocate</h3>
+        <p>
+            With real human partners, constructive interdependencies remain consistently low
+            in Non-RC settings. COLE achieves reward=76.21 but Int<sub>cons</sub>=1.89.
+            Humans frequently attempt to initiate cooperation (60&ndash;67% of the time),
+            but ZSC agents ignore most of these signals.
+        </p>
+
+        <h3>Finding 4: The metric can improve training</h3>
+        <p>
+            Incorporating interdependence as an additional reward signal during training
+            leads SOTA agents to <strong>consistently increase constructive interdependencies
+            without harming task performance</strong>, suggesting the metric can be used to
+            promote genuine cooperation.
+        </p>
+
+        <h2>Citation</h2>
+        <div class="bibtex-block">@inproceedings{biswas2026whoishelping,
+  title     = {Who is Helping Whom? Analyzing Inter-dependencies to Evaluate Cooperation in Human-AI Teaming},
+  author    = {Biswas, Upasana and Palod, Vardhan and Bhambri, Siddhant and Kambhampati, Subbarao},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  year      = {2026}
+}</div>
+
+        <div style="margin-top: 2.5rem;">
+            <a href="index.html#research" class="back-link">&larr; Back to Research</a>
         </div>
     </div>
 </section>
@@ -117,6 +199,5 @@
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>

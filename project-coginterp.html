@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CogInterp: Reasoning Traces &amp; LLM Performance – Upasana Biswas</title>
+    <meta name="description" content="Do Cognitively Interpretable Reasoning Traces Improve LLM Performance? NeurIPS 2025 CogInterp Workshop.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600;8..60,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project-styles.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="nav-brand">Upasana Biswas</a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#research">Research</a></li>
+            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<main>
+
+<section class="project-hero">
+    <div class="container">
+        <h1>Do Cognitively Interpretable Reasoning Traces Improve LLM Performance?</h1>
+        <p class="project-authors">
+            Siddhant Bhambri*,
+            <strong><u>Upasana Biswas</u>*</strong>,
+            <a href="http://rakaposhi.eas.asu.edu/" target="_blank">Subbarao Kambhampati</a>
+        </p>
+        <p class="project-authors" style="font-size:0.85rem;color:var(--stone-500);">* Equal contribution</p>
+        <p class="project-authors">School of Computing and AI, Arizona State University</p>
+        <div class="project-venue-line">
+            <span class="pub-badge badge-neurips">NeurIPS 2025 Workshop</span>
+            <span class="venue-extra">CogInterp Workshop on Cognitively Interpretable Models of AI</span>
+        </div>
+        <div class="project-links">
+            <a href="https://arxiv.org/abs/2505.13792" target="_blank" class="link-arxiv">
+                <i class="fas fa-file-alt"></i> Companion Paper (arXiv)
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container project-body">
+
+        <h2>TL;DR</h2>
+        <div class="result-highlight">
+            <p>We fine-tune LLMs with four types of reasoning traces&mdash;R1 (distilled),
+            summaries, post-hoc explanations, and algorithmically correct traces&mdash;and
+            find a striking disconnect: <strong>R1-style traces produce the best task accuracy
+            but are rated the <em>least</em> interpretable by humans</strong>. A 100-participant
+            user study confirms that accuracy and human interpretability pull in opposite directions,
+            raising fundamental questions about chain-of-thought transparency.</p>
+        </div>
+
+        <h2>Motivation</h2>
+        <p>
+            Chain-of-thought (CoT) prompting and reasoning traces have become the dominant paradigm for
+            improving LLM performance on multi-step tasks. But performance gains
+            alone do not guarantee that the resulting reasoning is <em>interpretable</em> to end users.
+        </p>
+        <p>
+            We ask: <strong>Do the traces that boost accuracy the most also help humans understand
+            the model&rsquo;s reasoning?</strong> If not, what are the implications for deploying
+            &ldquo;transparent&rdquo; AI systems?
+        </p>
+
+        <h2>Experimental Setup</h2>
+        <h3>Models</h3>
+        <p>We use <strong>supervised fine-tuning (SFT)</strong> on four open-source LLMs:</p>
+        <ul>
+            <li>LLaMA-3.2-1B-Instruct</li>
+            <li>LLaMA-3.1-8B-Instruct</li>
+            <li>Qwen3-1.7B</li>
+            <li>Qwen3-8B</li>
+        </ul>
+
+        <h3>Trace Types</h3>
+        <p>Each model is fine-tuned on one of <strong>four trace types</strong>:</p>
+        <ul>
+            <li><strong>R1 Traces:</strong> Distilled from DeepSeek-R1&mdash;long, exploratory,
+                often self-correcting reasoning chains typical of modern &ldquo;thinking&rdquo; models.</li>
+            <li><strong>Summaries:</strong> Concise, paragraph-level overviews of the key steps.</li>
+            <li><strong>Post-hoc Explanations:</strong> Retroactive justifications generated after
+                the answer, designed to explain rather than derive.</li>
+            <li><strong>Algorithmically Correct Traces:</strong> Manually verified step-by-step
+                reasoning that follows a correct algorithm for the task.</li>
+        </ul>
+
+        <h3>Task</h3>
+        <p>
+            All experiments use the <strong>CoTemp QA</strong> benchmark&mdash;a temporal question-answering
+            dataset requiring multi-step reasoning over timelines and events.
+        </p>
+
+        <h2>Key Findings: Model Performance</h2>
+        <div class="result-highlight">
+            <p><strong>R1 traces consistently produce the highest accuracy</strong> across all four
+            models (e.g., 61.9% on LLaMA-3.1-8B vs. 52&ndash;57% for other trace types).
+            Post-hoc explanations generally yield the lowest accuracy.</p>
+        </div>
+        <ul>
+            <li>The accuracy advantage of R1 holds across both 1B- and 8B-scale models.</li>
+            <li>Algorithmically correct traces&mdash;despite being logically sound&mdash;do <em>not</em>
+                consistently outperform other traces, suggesting that correctness of the trace alone
+                is insufficient for boosting model performance.</li>
+        </ul>
+
+        <h2>Key Findings: Human Interpretability</h2>
+        <p>
+            We conducted a <strong>between-subjects study with 100 participants</strong> recruited via
+            Prolific (25 per trace type). Participants rated the interpretability of model-generated
+            traces on a 7-point Likert scale.
+        </p>
+        <div class="result-highlight">
+            <p><strong>R1 traces are rated the least interpretable</strong> (mean&nbsp;=&nbsp;3.396),
+            significantly lower than summaries (4.292), post-hoc explanations (4.500), and
+            algorithmically correct traces (4.396). All pairwise comparisons are significant
+            (Mann&ndash;Whitney U with Bonferroni correction).</p>
+        </div>
+        <ul>
+            <li><strong>NASA-TLX:</strong> R1 traces impose the <strong>highest cognitive workload</strong>
+                across all dimensions&mdash;mental demand, temporal demand, effort, and frustration.</li>
+            <li><strong>The interpretability&ndash;performance disconnect:</strong> The trace type
+                that is best for the <em>model</em> is worst for the <em>human</em>. This raises a
+                fundamental tension: optimizing for task accuracy through reasoning traces may actively
+                harm human understanding.</li>
+        </ul>
+
+        <h2>Implications</h2>
+        <p>Our results challenge the common assumption that showing a model&rsquo;s reasoning
+        improves transparency:</p>
+        <ul>
+            <li><strong>Faithful &ne; Interpretable:</strong> Even if R1 traces faithfully reflect
+                the model&rsquo;s internal computation, their length and self-correcting nature make
+                them cognitively expensive for humans to parse.</li>
+            <li><strong>Post-hoc explanations</strong>, while not performance-optimal, may be better
+                suited for human-facing applications where understanding matters more than raw accuracy.</li>
+            <li>Future work should explore <strong>hybrid approaches</strong>&mdash;e.g., R1-style
+                internal reasoning paired with human-friendly summary explanations.</li>
+        </ul>
+
+        <h2>Companion Paper</h2>
+        <p>
+            Our companion paper, <a href="https://arxiv.org/abs/2505.13792" target="_blank">
+            <em>Interpretable Traces, Unexpected Outcomes: How Supervised Fine-Tuning with
+            Reasoning Traces Affects LLM Temporal Reasoning</em></a>, provides extended
+            analysis and additional experimental results, also presented at the NeurIPS 2025
+            CogInterp Workshop.
+        </p>
+
+        <h2>Citation</h2>
+        <div class="bibtex-block">@inproceedings{bhambri2025coginterp,
+  title     = {Do Cognitively Interpretable Reasoning Traces Improve {LLM} Performance?},
+  author    = {Bhambri, Siddhant and Biswas, Upasana and Kambhampati, Subbarao},
+  booktitle = {NeurIPS 2025 Workshop on Cognitively Interpretable Models of AI (CogInterp)},
+  year      = {2025}
+}</div>
+
+        <div style="margin-top: 2.5rem;">
+            <a href="index.html#research" class="back-link">&larr; Back to Research</a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Upasana Biswas</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

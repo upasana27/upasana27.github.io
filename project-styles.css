@@ -1,0 +1,209 @@
+/* ============================================
+   PROJECT PAGE STYLES
+   Shared across all individual project pages
+   ============================================ */
+
+/* ---------- Hero ---------- */
+.project-hero {
+    padding: 7rem 0 2.5rem;
+    background: var(--stone-50);
+    border-bottom: 1px solid var(--stone-200);
+}
+
+.project-hero h1 {
+    font-family: 'Source Serif 4', 'Georgia', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--stone-900);
+    margin-bottom: 1rem;
+    max-width: 800px;
+}
+
+.project-authors {
+    color: var(--stone-600);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.25rem;
+}
+
+.project-authors a {
+    color: var(--stone-700);
+    text-decoration: underline;
+    text-decoration-color: var(--stone-300);
+    text-underline-offset: 2px;
+}
+
+.project-authors a:hover {
+    color: var(--rose-600);
+    text-decoration-color: var(--rose-600);
+}
+
+.project-venue-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.venue-extra {
+    color: var(--stone-500);
+    font-size: 0.85rem;
+}
+
+/* ---------- Links ---------- */
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.project-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 1rem;
+    border-radius: var(--radius);
+    color: var(--white);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity var(--transition);
+}
+
+.project-links a:hover {
+    opacity: 0.85;
+}
+
+.link-paper  { background: var(--rose-600); }
+.link-code   { background: var(--stone-700); }
+.link-arxiv  { background: var(--blue-600); }
+.link-review { background: var(--purple-700); }
+.link-video  { background: var(--orange-600); }
+
+/* ---------- Body ---------- */
+.project-body {
+    max-width: 760px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.project-body h2 {
+    font-family: 'Source Serif 4', 'Georgia', serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--stone-900);
+    margin: 2.5rem 0 0.75rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid var(--stone-200);
+}
+
+.project-body h2:first-child {
+    margin-top: 0;
+}
+
+.project-body h3 {
+    font-family: 'Source Serif 4', 'Georgia', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--stone-900);
+    margin: 1.75rem 0 0.5rem;
+}
+
+.project-body p {
+    margin-bottom: 0.75rem;
+}
+
+.project-body ul {
+    margin: 0.5rem 0 1rem 1.5rem;
+}
+
+.project-body ul li {
+    margin-bottom: 0.4rem;
+}
+
+/* ---------- Figures ---------- */
+.figure-block {
+    margin: 1.5rem 0;
+}
+
+.figure-block img {
+    width: 100%;
+    border-radius: var(--radius);
+    border: 1px solid var(--stone-200);
+}
+
+.figure-block figcaption,
+.figure-placeholder {
+    margin-top: 0.5rem;
+    font-size: 0.88rem;
+    color: var(--stone-500);
+    line-height: 1.55;
+    background: var(--stone-50);
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius);
+    border: 1px dashed var(--stone-300);
+}
+
+/* ---------- Highlights ---------- */
+.result-highlight {
+    background: var(--stone-100);
+    border-left: 4px solid var(--rose-600);
+    padding: 1rem 1.25rem;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    margin: 0.75rem 0 1.25rem;
+}
+
+.result-highlight p {
+    margin-bottom: 0;
+}
+
+/* ---------- BibTeX ---------- */
+.bibtex-block {
+    background: var(--stone-100);
+    border: 1px solid var(--stone-200);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+    font-family: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo', monospace;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    overflow-x: auto;
+    white-space: pre;
+    color: var(--stone-700);
+}
+
+/* ---------- Back Link ---------- */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--stone-500);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.back-link:hover {
+    color: var(--rose-600);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+    .project-hero {
+        padding: 5.5rem 0 2rem;
+    }
+
+    .project-hero h1 {
+        font-size: 1.55rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-links a {
+        justify-content: center;
+    }
+}

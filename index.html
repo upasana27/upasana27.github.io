@@ -75,23 +75,34 @@
         <h2>About Me</h2>
         <div class="about-text">
             <p>
-            I am advised by <a href="http://rakaposhi.eas.asu.edu/" target="_blank">Prof. Subbarao Kambhampati</a>.
-            My work sits at the intersection of human&ndash;AI collaboration, multi-agent systems,
-            and large language model (LLM)-based agents.
+            I am a PhD student in Computer Science advised by <a href="http://rakaposhi.eas.asu.edu/" target="_blank">Prof. Subbarao Kambhampati</a>
+            at the <a href="https://yochan-lab.github.io/home/" target="_blank">Yochan Lab</a>, Arizona State University.
+            My research focuses on building AI agents that can genuinely collaborate with humans&mdash;not
+            just achieve high task performance, but engage in meaningful cooperative behavior.
+            </p>
+            <p>
+            I am particularly interested in understanding <em>how</em> humans and AI agents coordinate,
+            developing formal metrics to evaluate the quality of cooperation beyond task reward,
+            and training agents that can adapt to the adaptive nature of human teammates.
+            My work draws on multi-agent reinforcement learning, interactive decision processes (I-POMDPs),
+            and symbolic planning formalisms.
             </p>
 
             <div class="research-pillars">
                 <div class="pillar">
-                    <h4>Cooperation Analysis</h4>
-                    <p>Understanding when high performance in human&ndash;AI teams does (and does not) imply true collaboration.</p>
+                    <h4>Evaluating Cooperation</h4>
+                    <p>Formalizing <em>constructive interdependence</em>&mdash;measuring whether teammates truly rely on
+                    each other&rsquo;s actions, rather than merely succeeding independently.</p>
                 </div>
                 <div class="pillar">
-                    <h4>Adaptive Agent Design</h4>
-                    <p>Modeling human decision-making and leveraging hierarchical task representations for robust coordination.</p>
+                    <h4>Mutual Adaptation</h4>
+                    <p>Training agents via nested reasoning (I-POMDPs) so they can anticipate and respond
+                    to how human partners adapt during interaction.</p>
                 </div>
                 <div class="pillar">
-                    <h4>Human&ndash;LLM Interaction</h4>
-                    <p>Interpretability, trust, reasoning traces, and personalized communication in agentic systems.</p>
+                    <h4>LLM Reasoning &amp; Interpretability</h4>
+                    <p>Investigating whether chain-of-thought traces that help LLM performance
+                    are actually interpretable to humans&mdash;and what to do when they aren&rsquo;t.</p>
                 </div>
             </div>
 
@@ -144,60 +155,41 @@
         <div class="research-list">
 
             <article class="research-item">
-                <span class="venue-label">AAMAS 2026</span>
-                <h3><a href="project-nested-training.html">Nested Training for Mutual Adaptation in Human&ndash;AI Teaming</a></h3>
-                <p class="meta">October 2025 &ndash; Present</p>
-                <p>Developed a nested training regime grounded in finitely nested I-POMDPs
-                to enable structured mutual adaptation in human&ndash;AI teams.
-                Demonstrated robust generalization to unseen adaptive partners.</p>
-            </article>
-
-            <article class="research-item">
-                <span class="venue-label">AAAI 2026 &middot; RLC 2025</span>
+                <span class="venue-label">AAAI 2026</span>
                 <h3><a href="project-interdependence.html">Who is Helping Whom? Analyzing Interdependencies to Evaluate Cooperation in Human&ndash;AI Teaming</a></h3>
-                <p class="meta">July 2024 &ndash; Present</p>
-                <p>Proposed a framework formalizing interdependence to evaluate the quality
-                of cooperation in teams by quantifying how much teammates rely on each
-                other&rsquo;s actions to achieve shared goals. Developed evaluation metrics
-                to assess interdependencies in human&ndash;AI teams for tasks in the Overcooked domain.</p>
+                <p class="meta">First Author &middot; July 2024 &ndash; Present</p>
+                <p>Current ZSC agents achieve high task rewards but often fail to genuinely cooperate.
+                We propose <em>constructive interdependence</em>&mdash;a STRIPS-based metric that captures
+                how much teammates&rsquo; actions enable each other&rsquo;s progress toward shared goals.
+                A user study with 36 participants reveals that high reward does not imply cooperation.</p>
             </article>
 
             <article class="research-item">
-                <span class="venue-label">Ongoing</span>
-                <h3><a href="project-htn-bench.html">HTN-Bench: Evaluating Large Language Models on Hierarchical Task Networks</a></h3>
-                <p class="meta">June 2024 &ndash; Present</p>
-                <p>Evaluating planning abilities of LLMs on domains represented as Hierarchical
-                Task Networks (HTNs). Developed an external verifier to identify plan
-                failures and implemented an LLM-Modulo framework with iterative feedback
-                to improve plan correctness.</p>
+                <span class="venue-label">AAMAS 2026 EA</span>
+                <h3><a href="project-nested-training.html">NestRL: Nested Training for Mutual Adaptation in Human&ndash;AI Teaming</a></h3>
+                <p class="meta">First Author &middot; October 2025 &ndash; Present</p>
+                <p>Humans adapt to AI teammates&mdash;but most training methods ignore this.
+                We formulate human&ndash;AI teaming as a level-2 I-POMDP and propose NestRL,
+                a nested training regime that achieves 81.3% success vs. 54&ndash;60% for baselines
+                when paired with adaptive partners. Validated with a 25-participant user study.</p>
             </article>
 
             <article class="research-item">
-                <span class="venue-label">NeurIPS 2025 Workshop</span>
-                <h3>Do Cognitively Interpretable Reasoning Traces Improve LLM Performance?</h3>
-                <p class="meta">August &ndash; December 2025</p>
-                <p>Investigated the relationship between interpretability and task performance
-                in LLM reasoning traces. Fine-tuned open-weight models and conducted
-                human-subject evaluations.</p>
+                <span class="venue-label">NeurIPS 2025 WS</span>
+                <h3><a href="project-coginterp.html">Do Cognitively Interpretable Reasoning Traces Improve LLM Performance?</a></h3>
+                <p class="meta">Co-First Author &middot; 2025</p>
+                <p>SFT with DeepSeek R1 traces gives the best LLM accuracy&mdash;but a 100-participant
+                human study reveals these traces are the <em>least</em> interpretable.
+                Highlights a fundamental disconnect between what helps models and what helps users.</p>
             </article>
 
             <article class="research-item">
                 <span class="venue-label">HRI 2024</span>
                 <h3><a href="project-self-play.html">On the Pitfalls of Learning to Cooperate with Self-Play Agents</a></h3>
-                <p class="meta">August &ndash; December 2023</p>
-                <p>Investigated the learning progression of agents trained using self-play
-                and human teammates in collaborative multi-agent scenarios. Highlighted
-                significant behavioral divergences between partially trained self-play
-                agents and lower-skilled human counterparts.</p>
-            </article>
-
-            <article class="research-item">
-                <span class="venue-label">AAMAS 2023</span>
-                <h3>Hierarchical Reinforcement Learning for Ad Hoc Teaming</h3>
-                <p class="meta">August &ndash; October 2023</p>
-                <p>Developed a framework employing hierarchical reinforcement learning
-                to enhance human&ndash;AI collaboration through high-level strategy
-                alignment and sub-task optimization in the Overcooked domain.</p>
+                <p class="meta">First Author &middot; August &ndash; December 2023</p>
+                <p>Self-play checkpoints are commonly used as proxies for diverse human skill levels,
+                but we show that partially trained self-play agents exhibit behaviors that diverge
+                significantly from lower-skilled humans in the Overcooked domain.</p>
             </article>
 
         </div>
