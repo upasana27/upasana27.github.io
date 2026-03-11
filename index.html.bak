@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upasana Biswas | PhD Student</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-brand">Upasana Biswas</div>
+        <ul class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#pui wantblications">Publications</a></li>
+            <li><a href="#talks">Talks</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<header class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <img src="dp(2).png" alt="Upasana Biswas" class="profile-photo">
+            <div class="hero-text">
+                <h1>Upasana Biswas</h1>
+                <p class="subtitle">
+                    PhD Student in Computer Science<br>
+                    Arizona State University
+                </p>
+                <p class="research-interests">
+                    Human–AI Collaboration · Multi-Agent Systems · 
+                    LLM-Based Agents · Cooperative Decision-Making
+                </p>
+                <div class="social-links">
+                    <a href="https://scholar.google.com/citations?user=BxS1bVcAAAAJ&hl=en" target="_blank">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="mailto:ubiswas2@asu.edu">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/upasana-biswas-758113169" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+    <div class="container">
+        <h2>About</h2>
+
+        <p>
+        I am a PhD student in Computer Science at Arizona State University, 
+        advised by Prof. Subbarao Kambhampati. My work sits at the intersection 
+        of human–AI collaboration, multi-agent systems, and large language model (LLM)-based agents.
+        </p>
+
+        <p>
+        My research focuses on three main directions:
+        </p>
+
+        <ul>
+            <li>
+            <strong>Analyzing cooperation in multi-agent systems</strong>, 
+            with a particular emphasis on understanding interactions between human and AI teammates 
+            and identifying when high performance does (and does not) imply true collaboration.
+            </li>
+            <li>
+            <strong>Designing human-aware adaptive agents</strong> by modeling human decision-making 
+            and leveraging hierarchical task representations to enable robust, generalizable coordination.
+            </li>
+            <li>
+            <strong>Studying human–LLM interaction</strong>, focusing on interpretability, trust, 
+            reasoning traces, and personalized communication in user-adaptive agentic systems.
+            </li>
+        </ul>
+
+        <p>
+        Broadly, I aim to build principled foundations for human–AI multi-agent systems 
+        that are robust, adaptive, and grounded in structured models of reasoning.
+        </p>
+
+        <p>
+        Outside research, I am a trained <strong>Kathak dancer</strong>. I enjoy reading widely—especially 
+        history and philosophy—and I spend as much time as possible hiking.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- ================= RESEARCH ================= -->
+
+<section id="research" class="section section-alt">
+    <div class="container">
+        <h2>Research</h2>
+
+        <div class="project">
+            <h4><a href="project-nested-training.html">Nested Training for Mutual Adaptation in Human–AI Teaming</a></h4>
+            <p><em>October 2025 – Present</em></p>
+            <p>
+            Developed a nested training regime grounded in finitely nested I-POMDPs 
+            to enable structured mutual adaptation in human–AI teams. 
+            Demonstrated robust generalization to unseen adaptive partners.
+            Extended Abstract accepted at <em>25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)</em>.
+            </p>
+        </div>
+
+        <div class="project">
+            <h4><a href="project-interpretable-traces.html">Do Cognitively Interpretable Reasoning Traces Improve LLM Performance?</a></h4>
+            <p><em>August 2025 – December 2025</em></p>
+            <p>
+            Investigated the relationship between interpretability and task performance 
+            in LLM reasoning traces. Fine-tuned open-weight models and conducted 
+            human-subject evaluations.
+            Presented at the <em>NeurIPS 2025 CogInterp Workshop</em>.
+            </p>
+        </div>
+
+        <div class="project">
+            <h4><a href="project-interdependence.html">Who is Helping Whom? Analyzing Interdependencies to Evaluate Cooperation in Human–AI Teaming</a></h4>
+            <p><em>September 2024 – July 2025</em></p>
+            <p>
+            Proposed a metric of constructive interdependence to evaluate cooperation 
+            beyond task reward in human–AI teams.
+            Accepted at <em>AAAI 2026</em> and presented at <em>RLC 2025</em>.
+            </p>
+        </div>
+
+        <div class="project">
+            <h4><a href="project-self-play.html">On the Pitfalls of Learning to Cooperate with Self-Play Agents</a></h4>
+            <p><em>August 2023 – December 2023</em></p>
+            <p>
+            Examined the gap between self-play training and human collaboration 
+            in cooperative MARL.
+            Late-Breaking Report at the <em>ACM/IEEE International Conference on Human-Robot Interaction (HRI 2024)</em>.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= PUBLICATIONS ================= -->
+
+<section id="publications" class="section">
+    <div class="container">
+        <h2>Publications</h2>
+
+        <p>
+        See my 
+        <a href="https://scholar.google.com/citations?user=BxS1bVcAAAAJ&hl=en" target="_blank">
+        Google Scholar
+        </a> for a complete list.
+        </p>
+
+        <div class="publication">
+            <p><strong>Nested Training for Mutual Adaptation in Human–AI Teaming</strong></p>
+            <p>Upasana Biswas, Durgesh Kalwar, Subbarao Kambhampati, Sarath Sreedharan</p>
+            <p><em>25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026) – Extended Abstract</em></p>
+        </div>
+
+        <div class="publication">
+            <p><strong>Who is Helping Whom? Analyzing Inter-dependencies to Evaluate Zero-Shot Cooperation in Teams</strong></p>
+            <p>Upasana Biswas, Vardhan Palod, Siddhant Bhambri, Subbarao Kambhampati</p>
+            <p><em>AAAI Conference on Artificial Intelligence (AAAI 2026)</em></p>
+            <p><a href="https://openreview.net/forum?id=uQ09AYZB4w" target="_blank">Paper</a></p>
+        </div>
+
+        <div class="publication">
+            <p><strong>Do Cognitively Interpretable Reasoning Traces Improve LLM Performance?</strong></p>
+            <p>Siddhant Bhambri*, Upasana Biswas*, Subbarao Kambhampati</p>
+            <p><em>NeurIPS 2025 Workshop on Cognitive Aspects of Interpretability (CogInterp) and Learning to Act Workshop (LAW)</em></p>
+            <p><a href="https://arxiv.org/abs/2505.13792" target="_blank">Paper</a></p>
+        </div>
+
+        <div class="publication">
+            <p><strong>Interpretable Traces, Unexpected Outcomes</strong></p>
+            <p>Siddhant Bhambri, Upasana Biswas, Subbarao Kambhampati</p>
+            <p><em>NeurIPS 2025 Workshop on Cognitive Aspects of Interpretability (CogInterp)</em></p>
+            <p><a href="https://arxiv.org/abs/2505.13792" target="_blank">Paper</a></p>
+        </div>
+
+        <div class="publication">
+            <p><strong>On the Pitfalls of Learning to Cooperate with Self-Play Agents</strong></p>
+            <p>Upasana Biswas, Lin Guan, Subbarao Kambhampati</p>
+            <p><em>ACM/IEEE International Conference on Human-Robot Interaction (HRI 2024) – Late-Breaking Report</em></p>
+            <p><a href="https://dl.acm.org/doi/10.1145/3610978.3640692" target="_blank">Paper</a></p>
+        </div>
+
+        <div class="publication">
+            <p><strong>Hierarchical Reinforcement Learning for Ad Hoc Teaming</strong></p>
+            <p>Stéphane Aroca-Ouellette, Vaibhav V Unhelkar, Upasana Biswas, Lin Guan, Cassandra Kent, Rhys Newbury, Kursat Acar, Matthew C Fontaine, Rohit Desaraju, Suzanne Barber, Jason Mather, Aishwarya Chakravarthy, Harshith Venugopal, Stefanos Nikolaidis</p>
+            <p><em>International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2023)</em></p>
+            <p><a href="https://dl.acm.org/doi/10.5555/3545946.3598926" target="_blank">Paper</a></p>
+        </div>
+
+        <div class="publication">
+            <p><strong>Adapting Robotic Systems to User Control</strong></p>
+            <p>Upasana Biswas</p>
+            <p><em>Master's Thesis, Arizona State University (2023)</em></p>
+            <p><a href="https://keep.lib.asu.edu/items/189263" target="_blank">Thesis</a></p>
+        </div>
+
+        <div class="publication">
+            <p><strong>Improving Behavior-Based Swarm Control Using Partially Specified Human Preferences</strong></p>
+            <p>Upasana Biswas</p>
+            <p><em>MORE Symposium, Arizona State University (2023)</em></p>
+            <p><a href="https://forge.engineering.asu.edu/furiproject/improving-behavior-based-swarm-control-using-partially-specified-human-preferences/" target="_blank">Poster</a></p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= TALKS ================= -->
+
+<section id="talks" class="section section-alt">
+    <div class="container">
+        <h2>Talks & Presentations</h2>
+
+        <p>AAMAS 2026 – Extended Abstract Presentation</p>
+        <p>AAAI 2026 – Conference Presentation</p>
+        <p>Reinforcement Learning Conference (RLC) 2025 – Workshop Presentation</p>
+        <p>NeurIPS 2025 CogInterp Workshop – Oral/Poster Presentation</p>
+        <p>ACM/IEEE HRI 2024 – Late-Breaking Report Presentation</p>
+
+    </div>
+</section>
+
+
+<!-- ================= TEACHING ================= -->
+
+<section id="teaching" class="section">
+    <div class="container">
+        <h2>Teaching</h2>
+        <p>
+        Graduate Teaching Assistant – Planning and Learning (CSE 574), 
+        Arizona State University (Fall 2024)
+        </p>
+    </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section section-alt">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>
+        ubiswas2@asu.edu<br>
+        School of Computing and Augmented Intelligence<br>
+        Arizona State University<br>
+        Tempe, AZ
+        </p>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Upasana Biswas</p>
+        <p>Last updated: February 2026</p>
+    </div>
+</footer>
+
+</body>
+</html>
