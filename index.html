@@ -78,71 +78,29 @@
             I am a PhD student in Computer Science advised by <a href="http://rakaposhi.eas.asu.edu/" target="_blank">Prof. Subbarao Kambhampati</a>
             at the <a href="https://yochan-lab.github.io/home/" target="_blank">Yochan Lab</a>, Arizona State University.
             </p>
-
-            <h3 class="about-heading">Cooperation Beyond Task Reward</h3>
             <p>
-            Most AI agents today are trained to maximize task reward&mdash;if the team succeeds, the agent
-            is deemed cooperative. But task success alone tells us remarkably little. An agent can achieve
-            high reward while ignoring its partner entirely, or by forcing the human to do all the adapting.
-            That is not cooperation.
-            </p>
-            <p>
-            My research agenda is to formalize and study what cooperation actually requires when AI agents
-            work with people&mdash;not in isolation, but as part of a team where both sides observe, adapt,
-            and influence each other. This is what I think will matter most as AI moves into assistive
-            robotics and everyday AI assistants: agents that don&rsquo;t just succeed, but succeed
-            <em>with</em> their human partner.
+            I study <strong>cooperation</strong>&mdash;what it means, how to formalize it, and how to build
+            AI agents that can actually do it. Most collaborative AI is evaluated on task reward alone:
+            if the team succeeds, the agent is called cooperative. But an agent can score high while ignoring
+            its partner, or by forcing the human to do all the work. I&rsquo;m interested in what
+            cooperation demands <em>beyond</em> reward&mdash;across RL agents, humans, and LLMs.
             </p>
 
-            <h3 class="about-heading">1. Human&ndash;AI Teaming</h3>
-            <p>
-            How should an AI agent coordinate with a human who is adaptive, intentional, and unpredictable?
-            Existing approaches typically train against self-play partners or diverse but static populations,
-            and then hope the resulting policy transfers to humans. We&rsquo;ve shown that this assumption
-            is fundamentally flawed: partially-trained self-play agents diverge from human behavior in
-            systematic ways, especially at lower skill levels.
-            </p>
-            <p>
-            The core issue is that humans continuously adapt to the agent. If the robot treats the human as
-            stationary, its actions may unintentionally cause the interaction to drift instead of converge.
-            </p>
-            <p class="key-insight">
-            We need to model humans as adaptive agents whose behavior changes in response to the AI&mdash;and
-            train agents that anticipate this mutual adaptation.
-            </p>
-            <p>
-            We formalize this via interactive decision processes (I-POMDPs) and develop nested training
-            regimes where agents learn against partners who are themselves learning. The result is agents
-            that wait for signals, take initiative when needed, and coordinate across multiple possible
-            strategies&mdash;behaviors that emerge naturally from the training, not from hand-coded rules.
-            We validate through large-scale user studies, because we think building for humans requires
-            studying humans.
-            </p>
-            <p>
-            Separately, we&rsquo;ve also formalized what it means for teammates to be genuinely
-            <em>interdependent</em>&mdash;whether each agent&rsquo;s actions actually depend on
-            what the other does, or whether they merely succeed in parallel. This gives us a way to
-            evaluate the quality of cooperation that task reward alone cannot capture.
-            </p>
-
-            <h3 class="about-heading">2. LLM Reasoning &amp; Interaction</h3>
-            <p>
-            Chain-of-thought reasoning has become the dominant paradigm for improving LLM performance on
-            complex tasks. But performance gains alone don&rsquo;t guarantee that the resulting reasoning
-            is useful to people. If we want humans to understand, trust, and collaborate with AI systems,
-            the explanations need to actually make sense.
-            </p>
-            <p class="key-insight">
-            The reasoning traces that help models perform best may be the ones humans find hardest
-            to understand.
-            </p>
-            <p>
-            We&rsquo;ve found a striking disconnect: R1-style distilled traces produce the highest task
-            accuracy but are rated the <em>least</em> interpretable by humans and impose the highest
-            cognitive workload. This raises a fundamental question for deploying &ldquo;transparent&rdquo;
-            AI systems&mdash;optimizing for model performance through reasoning traces may actively
-            work against human understanding.
-            </p>
+            <div class="research-pillars">
+                <div class="pillar">
+                    <h4><i class="fas fa-users"></i> &nbsp;Teaming &amp; Cooperation</h4>
+                    <p>Formalizing the structure of cooperative interaction&mdash;what makes teammates
+                    genuinely interdependent, how agents should adapt to partners who are themselves
+                    adapting, and how to benchmark different types of cooperation across computational
+                    models (Dec-POMDPs, I-POMDPs) and human teams.</p>
+                </div>
+                <div class="pillar">
+                    <h4><i class="fas fa-brain"></i> &nbsp;LLMs &amp; Interaction</h4>
+                    <p>Understanding how LLMs reason and interact&mdash;whether their explanations
+                    actually help humans, how teams of LLM agents cooperate, and where the gaps are
+                    between model performance and human interpretability.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
