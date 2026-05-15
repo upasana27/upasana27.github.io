@@ -427,11 +427,13 @@ a:hover {
     vertical-align: middle;
 }
 
-.badge-aaai    { background: var(--blue-700); }
-.badge-aamas   { background: var(--green-700); }
-.badge-neurips { background: var(--purple-700); }
-.badge-hri     { background: var(--orange-600); }
-.badge-thesis  { background: var(--stone-700); }
+.badge-aaai      { background: var(--blue-700); }
+.badge-aamas     { background: var(--green-700); }
+.badge-neurips   { background: var(--purple-700); }
+.badge-hri       { background: var(--orange-600); }
+.badge-thesis    { background: var(--stone-700); }
+.badge-acl       { background: #b5451b; }
+.badge-preprint  { background: #6b7280; }
 
 .pub-authors {
     color: var(--stone-500);
@@ -442,6 +444,13 @@ a:hover {
     color: var(--stone-500);
     font-size: 0.85rem;
     font-style: italic;
+}
+
+.pub-also {
+    color: var(--stone-400);
+    font-size: 0.82rem;
+    font-style: italic;
+    margin-top: 2px;
 }
 
 .pub-links {
